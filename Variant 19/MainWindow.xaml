@@ -1,0 +1,20 @@
+﻿<Window x:Class="Variant_19.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Variant_19"
+        mc:Ignorable="d"
+        Title="Меню" Height="450" Width="800">
+    <Grid>
+        <Menu>
+            <MenuItem x:Name="MWAssignment" Header="Назначение прав" Click="MWAssignment_Click"></MenuItem>
+            <MenuItem x:Name="MWPermition" Header="Права" Click="MWPermition_Click"></MenuItem>
+            <MenuItem x:Name="MWRole" Header="Роли пользователей" Click="MWRole_Click"></MenuItem>
+            <MenuItem x:Name="MWUser" Header="Пользователь приложения" Click="MWUser_Click"></MenuItem>
+
+
+
+        </Menu>
+    </Grid>
+</Window>

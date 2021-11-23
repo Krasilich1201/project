@@ -1,0 +1,53 @@
+﻿<Window x:Class="Variant_19.NewWindow.WindowNewRole"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Variant_19.NewWindow"
+        mc:Ignorable="d"
+        Title="WindowNewRole" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="28*"/>
+            <RowDefinition Height="81*"/>
+            <RowDefinition Height="109*"/>
+            <RowDefinition Height="109*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="80*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <TextBlock Grid.Column="0" Text="Role ID:"
+            HorizontalAlignment="Left" VerticalAlignment="Center" Margin="214,29,0,29" Height="16" Width="61" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Имя роли: "
+            HorizontalAlignment="Left" VerticalAlignment="Center" Margin="188,5,0,5" Height="20" Width="65"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Описание: "
+            HorizontalAlignment="Left" VerticalAlignment="Center" Margin="188,32,0,33" Height="20" Width="65"/>
+
+        <TextBox x:Name="PermitionID" Grid.Column="1"
+                 Text="{Binding PermitionID}" Height="20" Width="130"
+                 HorizontalAlignment="Left" VerticalAlignment="Center"
+                 Margin="5,0,0,0" />
+
+        <TextBox x:Name="NameRole" Grid.Row="1" Grid.Column="1"
+            Text="{Binding NameRole}"
+            Height="20" Width="130"
+            HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0"/>
+
+        <TextBox x:Name="Discription" Grid.Row="2" Grid.Column="2" Text="{Binding Discription}" Height="20" Width="130" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0"/>
+
+
+        <StackPanel Grid.Column="1" Grid.Row="4"
+            Orientation="Horizontal" HorizontalAlignment="Left" Margin="383,0,0,0" Width="149">
+            <Button x:Name="BtSave" Content="Сохранить" Height="25"
+                HorizontalAlignment="Right" VerticalAlignment="Top"
+                Margin="5,10,10,5" IsDefault="True" Click="BtSave_Click"/>
+            <Button x:Name="BtCansel" Content="Отменить" Height="25"
+                HorizontalAlignment="Right" VerticalAlignment="Top"
+                Margin="5,10,10,5" IsCancel="True"/>
+        </StackPanel>
+    </Grid>
+</Window>

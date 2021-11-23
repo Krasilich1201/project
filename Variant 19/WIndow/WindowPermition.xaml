@@ -1,0 +1,29 @@
+﻿<Window x:Class="Variant_19.WIndow.WindowPermition"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Variant_19.WIndow"
+        mc:Ignorable="d"
+        Title="Права" Height="450" Width="800">
+    <StackPanel Background="#FFD8D8D8">
+        <StackPanel Orientation="Horizontal" Background="#FFE4E0E0"/>
+        <ListView x:Name="WNPPermition" Background="#FFD3CDCD">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="ID" Width="50" 
+                                        DisplayMemberBinding="{Binding ID}" />
+                        <GridViewColumn Header="Наименование права" Width="170"
+                                        DisplayMemberBinding="{Binding NamePermition}" />
+                        <GridViewColumn Header="Описание" Width="150"
+                                        DisplayMemberBinding="{Binding Discription}" />
+                        <GridViewColumn Header="Дата создания" Width="150"
+                                        DisplayMemberBinding="{Binding DateCreate}" />
+
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </StackPanel>
+</Window>
